@@ -23,7 +23,6 @@ var timeToHex = function(x,y,z){
 		z = z.toString();
 }
 	hexColor = "#"+x+y+z;
-	console.log("Current time to color is : "+hexColor);}
 
 var displayTime = function(){
 	var d = new Date();
