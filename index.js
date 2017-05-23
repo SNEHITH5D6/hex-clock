@@ -12,9 +12,42 @@ var displayTime = function(){
 	var m = d.getMinutes();
 	var s = d.getSeconds();
 	timeToHex(h,m,s);
-	$("#hours").html(h+" "+":");
-	$("#minutes").html(m+" "+":");
-	$("#seconds").html(s+"  ");
+	
+	if(h == 0){		
+		$("#hours").html("00"+" "+":");
+	}
+
+	else if(h >= 1 && h <= 9){
+		$("#hours").html("0"+h+" "+":");
+	}
+
+	else{
+		$("#hours").html(h+" "+":");
+	}
+
+        if(m == 0){
+                $("#minutes").html("00"+" "+":");
+        }
+
+        else if(m >= 1 && m <= 9){
+                $("#minutes").html("0"+m+" "+":");
+        }
+
+        else{
+                $("#minutes").html(m+" "+":");
+        }
+
+        if(s == 0){
+                $("#seconds").html("00"+"  ");
+        }
+
+        else if(s >= 1 && s <= 9){
+                $("#seconds").html("0"+s+"  ");
+        }
+
+        else{
+                $("#seconds").html(s+"  ");
+        }
 }
 
 
