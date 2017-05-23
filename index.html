@@ -25,12 +25,12 @@
         </div>
     <div style="text-align:center">
       <br>
+      <br>
       <a class="github-button" href="https://github.com/therealvasanth/hex-clock" data-size="large" data-show-count="true" aria-label="Star therealvasanth/lsdjfsdf on GitHub">Star</a>
       <br>
       <br>
-      <a target="_blank" href="#">
-        <button class="btn btn-primary">Click here to know about hex clock</button>
-      </a>
+        <button id="hex-info" class="btn btn-primary">Click here to know about hex clock</button>
+	<br>
     </div>
         <script src="jquery.js"></script>
         <script src="index.js"></script>
@@ -48,6 +48,11 @@
         var d = new Date()
         document.write("&copy; "+d.getFullYear());
         </script>
+	<script>
+		$("#hex-info").click(function(){
+			alert("The hex clock simply takes the time, concatenates their value and sets the equivalent hex color value as the clock's background color\n\n Example: \n 07 : 57 : 35 = #075735\n 03 : 06 : 07 = #030607 \n 19 : 17 : 26 = #191726");
+});
+	</script>
 		</footer>
 </body>
 </html>

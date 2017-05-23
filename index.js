@@ -8,7 +8,7 @@ var timeToHex = function(x,y,z){
 		x = x.toString();
 	
 }
-	if(y == 0){
+	if(y >= 0 && y <= 9){
 		y = y.toString();
 		y = "0"+y;
 }	
