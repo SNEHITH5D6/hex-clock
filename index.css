@@ -5,16 +5,22 @@
 }
 
 #hours {
+        -webkit-text-stroke-width:2px;
+        -webkit-text-stroke-color:silver;
         font-size: 3em;
         display: inline;
 }
 
 #minutes {
+        -webkit-text-stroke-width:2px;
+        -webkit-text-stroke-color:silver;
         font-size: 3em;
         display: inline;
 }
 
 #seconds {
+        -webkit-text-stroke-width:2px;
+        -webkit-text-stroke-color:silver;
         font-size: 3em;
         display: inline;
 }
