@@ -1,8 +1,27 @@
 var hexColor;
 var timeToHex = function(x,y,z){
-	x = x.toString();
-	y = y.toString();
-	z = z.toString();
+	if(x >= 0 && x <= 9){
+		x = x.toString();
+		x = "0"+x;
+}
+	else{
+		x = x.toString();
+	
+}
+	if(y == 0){
+		y = y.toString();
+		y = "0"+y;
+}	
+	else{
+		y = y.toString();	
+}
+	if (z >= 0 && z <= 9){
+		z = z.toString();
+		z = "0"+z;		
+}
+	else{
+		z = z.toString();
+}
 	hexColor = "#"+x+y+z;
 	console.log("Current time to color is : "+hexColor);}
 
