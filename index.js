@@ -6,23 +6,24 @@ var timeToHex = function(x,y,z){
 }
 	else{
 		x = x.toString();
-	
+
 }
 	if(y >= 0 && y <= 9){
 		y = y.toString();
 		y = "0"+y;
-}	
+}
 	else{
-		y = y.toString();	
+		y = y.toString();
 }
 	if (z >= 0 && z <= 9){
 		z = z.toString();
-		z = "0"+z;		
+		z = "0"+z;
 }
 	else{
 		z = z.toString();
 }
 	hexColor = "#"+x+y+z;
+}
 
 var displayTime = function(){
 	var d = new Date();
@@ -30,8 +31,8 @@ var displayTime = function(){
 	var m = d.getMinutes();
 	var s = d.getSeconds();
 	timeToHex(h,m,s);
-	
-	if(h == 0){		
+
+	if(h == 0){
 		$("#hours").html("00"+" "+":");
 	}
 
@@ -66,7 +67,7 @@ var displayTime = function(){
         else{
                 $("#seconds").html(s+"  ");
         }
-	$("body").css("background-color",hexColor);
+				$("body").css("background-color",hexColor);
 }
 
 
@@ -74,5 +75,3 @@ setInterval(
         function(){
                 displayTime();
 },1000);
-
-
