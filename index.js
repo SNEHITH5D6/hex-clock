@@ -1,26 +1,26 @@
 var hexColor;
-var d = new Date();
-var h = d.getHours();
-var m = d.getMinutes();
-var s = d.getSeconds();
-
 var timeToHex = function(x,y,z){
 	x = x.toString();
 	y = y.toString();
 	z = z.toString();
 	hexColor = "#"+x+y+z;
-	console.log("Current time to color is : "+hexColor);
-}
-
-timeToHex(h,m,s);
-
+	console.log("Current time to color is : "+hexColor);}
 
 var displayTime = function(){
-
+	var d = new Date();
+	var h = d.getHours();
+	var m = d.getMinutes();
+	var s = d.getSeconds();
+	timeToHex(h,m,s);
 	$("#hours").html(h+" "+":");
 	$("#minutes").html(m+" "+":");
 	$("#seconds").html(s+"  ");
 }
 
 
-displayTime();
+setInterval(
+        function(){
+                displayTime();
+},1000);
+
+
