@@ -1,3 +1,9 @@
+#time {
+        font-family: 'Orbitron', sans;
+        margin-top: 75px;
+        text-align: center;
+}
+
 #hours {
         font-size: 3em;
         display: inline;
