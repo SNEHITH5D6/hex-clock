@@ -12,5 +12,15 @@ var timeToHex = function(x,y,z){
 	console.log("Current time to color is : "+hexColor);
 }
 
-
 timeToHex(h,m,s);
+
+
+var displayTime = function(){
+
+	$("#hours").html(h+" "+":");
+	$("#minutes").html(m+" "+":");
+	$("#seconds").html(s+"  ");
+}
+
+
+displayTime();
