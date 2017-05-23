@@ -48,6 +48,7 @@ var displayTime = function(){
         else{
                 $("#seconds").html(s+"  ");
         }
+	$("body").css("background-color",hexColor);
 }
 
 
