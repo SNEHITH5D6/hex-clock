@@ -43,6 +43,9 @@ body {
   color: #fff;
 }
 
+#hex-color{
+  background-color:#fff;
+}
 h4 a:hover{
   color: #46b798;
 }

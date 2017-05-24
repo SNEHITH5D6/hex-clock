@@ -23,6 +23,7 @@ var timeToHex = function(x,y,z){
 		z = z.toString();
 }
 	hexColor = "#"+x+y+z;
+	
 }
 
 var displayTime = function(){
@@ -31,7 +32,7 @@ var displayTime = function(){
 	var m = d.getMinutes();
 	var s = d.getSeconds();
 	timeToHex(h,m,s);
-
+	$("#hex-color").html(hexColor);
 	if(h == 0){
 		$("#hours").html("00"+" "+":");
 	}
